@@ -518,3 +518,100 @@ vertical-align: middle;
   object-fit: cover;
   border-radius: 5px;
 }
+
+
+
+/* Mobile responsiveness */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .special-offers {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main-nav li {
+        flex: 1 1 30%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav li {
+        flex: 1 1 45%;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .popular-products {
+    padding: 15px 10px;
+  }
+  
+  .popular-text {
+    font-size: 20px;
+  }
+  
+  .popular-text2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .product-icons {
+    gap: 10px;
+  }
+  
+  .icon-button {
+    width: calc(33.333% - 10px);
+    max-width: 90px;
+    padding: 8px;
+  }
+  
+  .icon-button img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .popular-text {
+    font-size: 18px;
+  }
+  
+  .popular-text2 {
+    font-size: 14px;
+  }
+  
+  .product-icons {
+    gap: 8px;
+  }
+  
+  .icon-button {
+    width: calc(50% - 8px);
+    max-width: 80px;
+    padding: 5px;
+  }
+  
+  .icon-button img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon-button span {
+    font-size: 12px;
+  }
+}
